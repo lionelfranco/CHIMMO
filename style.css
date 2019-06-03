@@ -31,11 +31,85 @@ Bleu Foncé : #13324B
     font-style: normal;
 }
 
+body{
+    width: 100%;
+    margin: auto;
+}
 
+/* DIV section3 maquette*/
 
+img{
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
 
+/* DIV section4 listes*/
 
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding-bottom: 40px;
+}
 
+.listes{
+    width: 30%;
+    border: 1px dotted;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    
+    
+}
+
+.listes:nth-child(2) {
+    margin-left: 20px;
+}
+
+#icon{
+    width: 20px;
+    height: 20px;
+    float: left;
+    display: block;
+}
+
+.titre{
+    font-size: 45px;
+    color: #13324B;
+}
+
+.police{
+    font-size: 15px;
+    font-weigth: light;
+    text-indent: 10px;
+}
+
+.icon-plus{
+    width: 60px;
+    height: 60px;
+    background-color: #74AAD5;
+    border-radius: 50%;
+}
+
+.icon-list{
+    width: 40px;
+    height: 40px;
+    background-color: #74AAD5;
+    border-radius: 50%;
+  
+}
+
+.icon-pointsforts{
+    widht: 30px;
+    height: 30px;
+}
 
 
 
