@@ -1,0 +1,184 @@
+/* CSS par Christine, Florent et Lionel */
+/* ==================================== */
+
+/*
+Blanc : #FFFFFF ou #FFF
+Bleu Clair : #74AAD5
+Bleu Foncé : #13324B
+*/
+
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('/polices/droidserif-webfont.eot');
+    src: url('/polices/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/polices/droidserif-webfont.woff2') format('woff2'),
+         url('/polices/droidserif-webfont.woff') format('woff'),
+         url('/polices/droidserif-webfont.svg#droid_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/polices/montserrat-regular-webfont.eot');
+    src: url('/polices/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/polices/montserrat-regular-webfont.woff2') format('woff2'),
+         url('/polices/montserrat-regular-webfont.woff') format('woff'),
+         url('/polices/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size : 15px;
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+
+/* CSS de la DIV 1 */
+/* =============== */
+
+#div1 {
+    background-image: url("images/maison.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+
+}
+
+#conteneurBarreSuperieure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 0px;
+}
+
+#conteneurBarreSuperieure ul {
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+    .contenuBarreSuperieure {
+
+    }
+
+    .contenuBarreSuperieure img {
+        width: 100px;
+        height: 100px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .contenuBarreSuperieure:nth-child(1) {
+        margin-right: 200px;
+    }
+
+
+
+#conteneurMenuSuperieur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .contenuMenuSuperieur {
+        margin-right: 20px;
+    }
+
+    .contenuMenuSuperieur img {
+        width: auto;
+        height: auto;
+    }
+
+        .contenuMenuSuperieur:nth-child(7) {
+            background-color: #74AAD5;
+            width: 150px;
+            height: 30px;
+            border-radius: 2em;
+        }
+
+#conteneurTitrePrincipal {
+    position: relative;
+    top: 220px;
+    right: -65%;
+    width: 400px;
+}
+
+    .contenuTitrePrincipal{
+        width: 250px;
+    }
+
+    .contenuTitrePrincipal:nth-child(1) p:first-child {
+        font-size: 80px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+        .contenuTitrePrincipal:nth-child(2){
+            background-image: url("images/arrow-right.svg");
+            background-repeat: no-repeat;
+            background-color: #13324B;
+            height: 30px;
+            border-radius: 2em;
+        }
+
+#conteneurStatistiques {
+    position: relative;
+    display: flex;
+    bottom: -420px;
+    left: 22%;
+}
+
+    .contenuStatistiques {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+        .contenuStatistiques:nth-child(1) {
+            background-color: #74AAD5;
+        }
+
+        .contenuStatistiques:nth-child(2) {
+            background-color: #FFFFFF;
+            color:  #74AAD5;
+        }
+
+#conteneurFlecheDecorative {
+
+}
+
+
+
+
+
+
+
+/* ======================== Media Queries ======================== */
+/* PC : 2560 1920 1680 1440 1366 1280 1152 1024 800 / Mobile : 480 */
+
+.test_mediaqueries {
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1920px) {
+    
+}
+
+
+
+
+
+/* ==================================== */
+/* CSS par Christine, Florent et Lionel */
