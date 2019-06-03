@@ -1,0 +1,79 @@
+/* CSS par Christine, Florent et Lionel */
+/* ==================================== */
+
+/*
+Blanc : #FFFFFF ou #FFF
+Bleu Clair : #74AAD5
+Bleu Foncé : #13324B
+*/
+
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'droid_serifregular';
+    src: url('/polices/droidserif-webfont.eot');
+    src: url('/polices/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/polices/droidserif-webfont.woff2') format('woff2'),
+         url('/polices/droidserif-webfont.woff') format('woff'),
+         url('/polices/droidserif-webfont.svg#droid_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('/polices/montserrat-regular-webfont.eot');
+    src: url('/polices/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/polices/montserrat-regular-webfont.woff2') format('woff2'),
+         url('/polices/montserrat-regular-webfont.woff') format('woff'),
+         url('/polices/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== Media Queries ======================== */
+/* PC : 2560 1920 1680 1440 1366 1280 1152 1024 800 / Mobile : 480 */
+
+.test_mediaqueries {
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1920px) {
+    
+}
+
+
+
+
+
+/* ==================================== */
+/* CSS par Christine, Florent et Lionel */
