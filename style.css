@@ -10,23 +10,23 @@ Bleu Foncé : #13324B
 /* Définition des polices personnalisées */
 
 @font-face {
-    font-family: 'Droid Serif';
-    src: url('/polices/droidserif-webfont.eot');
-    src: url('/polices/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/polices/droidserif-webfont.woff2') format('woff2'),
-         url('/polices/droidserif-webfont.woff') format('woff'),
-         url('/polices/droidserif-webfont.svg#droid_serifregular') format('svg');
+    font-family: "Droid Serif";
+    src: url('polices/droidserif-webfont.eot');
+    src: url('polices/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/droidserif-webfont.woff2') format('woff2'),
+         url('polices/droidserif-webfont.woff') format('woff'),
+         url('polices/droidserif-webfont.svg#droid_serifregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/polices/montserrat-regular-webfont.eot');
-    src: url('/polices/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/polices/montserrat-regular-webfont.woff2') format('woff2'),
-         url('/polices/montserrat-regular-webfont.woff') format('woff'),
-         url('/polices/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-family: "Montserrat";
+    src: url('polices/montserrat-regular-webfont.eot');
+    src: url('polices/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/montserrat-regular-webfont.woff2') format('woff2'),
+         url('polices/montserrat-regular-webfont.woff') format('woff'),
+         url('polices/montserrat-regular-webfont.svg#montserratregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,19 +44,19 @@ body {
 /* =============== */
 
 #div1 {
+    position: relative;
     background-image: url("images/maison.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 95vh;
-
+    box-shadow: inset 0em 8em 3em rgba(0, 0, 0, 0.4);
 }
 
 #conteneurBarreSuperieure {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding-top: 0px;
+    padding: 0;
 }
 
 #conteneurBarreSuperieure ul {
@@ -66,20 +66,13 @@ body {
 }
 
     .contenuBarreSuperieure {
-
+        border-bottom: 0.1em solid #74AAD5;
     }
 
     .contenuBarreSuperieure img {
         width: 100px;
         height: 100px;
-        padding: 0px 0px 0px 0px;
     }
-
-    .contenuBarreSuperieure:nth-child(1) {
-        margin-right: 200px;
-    }
-
-
 
 #conteneurMenuSuperieur {
     display: flex;
@@ -96,64 +89,160 @@ body {
         height: auto;
     }
 
-        .contenuMenuSuperieur:nth-child(7) {
+    .contenuMenuSuperieur:first-child img {
+        width: 100px;
+        height: 100px;
+        padding: 0px 200px 0px 0px;
+    }
+
+        .contenuMenuSuperieur:nth-child(1) {
+            margin-left: -40px;
+        }
+
+        .contenuMenuSuperieur:nth-child(2) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 0.3em solid #74AAD5;
+        }
+
+        .contenuMenuSuperieur:nth-child(8) {
             background-color: #74AAD5;
             width: 150px;
             height: 30px;
             border-radius: 2em;
+            padding-top: 15px;
+            padding-left: 10px;
+            margin-right: 0px;
+        }
+    
+    .contenuMenuSuperieur:nth-child(8) img {
+            padding-left: 10px;
         }
 
 #conteneurTitrePrincipal {
-    position: relative;
-    top: 220px;
-    right: -65%;
-    width: 400px;
+    position: absolute;
+    bottom: 35%;
+    padding-left: 65.5%;
+
+
 }
 
-    .contenuTitrePrincipal{
+    .contenuTitrePrincipal {
+        align-items: center;
         width: 250px;
     }
 
     .contenuTitrePrincipal:nth-child(1) p:first-child {
+        font-family: "Montserrat", sans-serif;
         font-size: 80px;
         font-weight: bold;
         margin-bottom: 0px;
     }
 
+    .contenuTitrePrincipal:nth-child(1) p:last-child {
+        font-family: "Droid Serif";
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 0px;
+    }
+
         .contenuTitrePrincipal:nth-child(2){
-            background-image: url("images/arrow-right.svg");
-            background-repeat: no-repeat;
+            display: flex;
             background-color: #13324B;
+            width: 206px;
             height: 30px;
             border-radius: 2em;
+            margin-top: 40px;
+            padding-top: 10px;
+            padding-left: 6px;
+            padding-bottom: 10px;
         }
 
+        .contenuTitrePrincipal:nth-child(2) img {
+            width: 15px;
+            height: 15px;
+            padding-top: 7.5px;
+            padding-left: 7.5px;
+        }
+
+                #contenuFlecheDroite {
+                    background-color: #FFFFFF;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 6px;
+                    margin-right: 10px;
+                }
+
+                #texteFlecheDroite {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 11px;
+                    font-weight: bold;
+                }
+
 #conteneurStatistiques {
-    position: relative;
+    position: absolute;
+    bottom: 5%;
     display: flex;
-    bottom: -420px;
-    left: 22%;
+    align-items: center;
+    padding-left: 20%;
 }
 
     .contenuStatistiques {
-        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;width: 150px;
         height: 150px;
         border-radius: 50%;
         text-align: center;
+        font-family: "Droid Serif", sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
     }
 
         .contenuStatistiques:nth-child(1) {
             background-color: #74AAD5;
+
         }
 
         .contenuStatistiques:nth-child(2) {
             background-color: #FFFFFF;
-            color:  #74AAD5;
+            color:  #13324B;
+            margin-left: 20px;
         }
 
-#conteneurFlecheDecorative {
+#conteneurFlecheBas {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        opacity: 0.6;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
 
 }
+
+    .contenuFlecheBas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #74AAD5;
+        opacity: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+     .contenuFlecheBas img {
+        transform: rotate(90deg);
+        width: 15px;
+        height: 15px;
+    }
 
 
 
@@ -166,6 +255,7 @@ body {
 
 .test_mediaqueries {
     display: none;
+    background-color: black;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
