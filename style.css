@@ -408,6 +408,56 @@ body {
 
 /* Fin du CSS de la div 2 */
 
+/* Début du CSS de la div 5 */
+
+#div5 {
+  display: flex;
+  flex-direction: row;
+  font-family: 'droidserif';
+  font-size: 35px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.div5-plusinfo {
+  margin-right: 200px;
+}
+
+.div5-info {
+  color: #74AAD5;
+}
+
+.div5-contact {
+  font-family: 'montserrat';
+  font-size: 15px;
+  background-color: #FFFFFF;
+  color: #74AAD5;
+  display: flex;
+  flex-direction:row;
+  border: 2px solid #74AAD5;
+  border-radius: 5em;
+  padding: 0.6%;
+}
+
+.div5-bouton {
+  background-color: #74AAD5;
+  height: 40px;
+  width: 40px;
+  border: 1px #74AAD5;
+  border-radius: 60%;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.div5-fleche {
+  width: 25px;
+  height: 25px;
+  padding-top: 7px;
+}
+
+/* Fin du CSS de la div 5 */
+
 /* Début du CSS de la div 6 */
 
 #div6 {
