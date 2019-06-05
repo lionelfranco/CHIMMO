@@ -565,6 +565,12 @@ body {
   font-family: 'montserratregular';
   font-size: 15px;
   font-weight: lighter;
+  color: black;
+}
+
+h1 {
+  color: black;
+  font-family: 'montserratregular';
 }
 
 .div2-sous-titre {
