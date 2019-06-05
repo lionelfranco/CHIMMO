@@ -623,10 +623,11 @@ h1 {
 
 /* Début du CSS de la div 3 */
 
-img {
+.section3 img {
   width: 600px;
   height: 400px;
-  display: block;
+  display: flex;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
@@ -893,14 +894,14 @@ img {
   font-weight: normal;
 }
 
-ul {
+#div6 ul {
   list-style: none;
   display: inline-flex;
   flex-flow: row;
   align-items: center;
 }
 
-ul li {
+#div6 ul li {
   padding-right: 15px;
 }
 
