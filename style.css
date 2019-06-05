@@ -541,9 +541,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   font-family: 'montserratregular';
-  margin-left: 30vh;
-  margin-right: -30vh;
   margin-top: 600px;
+  margin-left: 200px;
 }
 
 .div2-image {
@@ -620,6 +619,7 @@ h1 {
 .div2-bouton p {
   margin-left: 10px;
 }
+
 
 /* Fin du CSS de la div 2 */
 
@@ -732,26 +732,8 @@ ul li {
 
 /*Fin du CSS de la div 6 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ======================== Media Queries ======================== */
+
 /* PC : 2560 1920 1680 1440 1366 1280 1152 1024 800 / Mobile : 480 */
 
 .test_mediaqueries {
@@ -765,10 +747,6 @@ ul li {
 @media screen and (max-width: 1920px) {
 
 }
-
-
-
-
 
 /* ==================================== */
 /* CSS par Christine, Florent et Lionel */
