@@ -324,9 +324,215 @@ Bleu Foncé : #13324B
 /* Fin des font-face */
 
 body {
+  background-color: #FFFFFF;
+  font-family: "montserratregular", sans-serif;
+  font-size : 15px;
+  color: white;
   width: 100%;
   margin: auto;
 }
+
+/* CSS de la DIV 1 */
+/* =============== */
+
+#div1 {
+    position: relative;
+    background-image: url("images/maison.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    box-shadow: inset 0em 8em 3em rgba(0, 0, 0, 0.4);
+}
+
+#conteneurBarreSuperieure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#conteneurBarreSuperieure ul {
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contenuBarreSuperieure {
+    border-bottom: 0.1em solid #74AAD5;
+}
+
+.contenuBarreSuperieure img {
+    width: 100px;
+    height: 100px;
+}
+
+#conteneurMenuSuperieur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenuMenuSuperieur {
+    margin-right: 20px;
+}
+
+.contenuMenuSuperieur img {
+    width: auto;
+    height: auto;
+}
+
+.contenuMenuSuperieur:first-child img {
+    width: 100px;
+    height: 100px;
+    padding: 0px 200px 0px 0px;
+}
+
+.contenuMenuSuperieur:nth-child(1) {
+    margin-left: -40px;
+}
+
+.contenuMenuSuperieur:nth-child(2) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.3em solid #74AAD5;
+}
+
+.contenuMenuSuperieur:nth-child(8) {
+    background-color: #74AAD5;
+    width: 150px;
+    height: 30px;
+    border-radius: 2em;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-right: 0px;
+}
+
+.contenuMenuSuperieur:nth-child(8) img {
+    padding-left: 10px;
+}
+
+#conteneurTitrePrincipal {
+    position: absolute;
+    bottom: 35%;
+    padding-left: 65.5%;
+}
+
+.contenuTitrePrincipal {
+    align-items: center;
+    width: 250px;
+}
+
+.contenuTitrePrincipal:nth-child(1) p:first-child {
+    font-family: "montserratregular", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.contenuTitrePrincipal:nth-child(1) p:last-child {
+    font-family: "droid_serifregular";
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.contenuTitrePrincipal:nth-child(2){
+    display: flex;
+    background-color: #13324B;
+    width: 206px;
+    height: 30px;
+    border-radius: 2em;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-left: 6px;
+    padding-bottom: 10px;
+}
+
+.contenuTitrePrincipal:nth-child(2) img {
+    width: 15px;
+    height: 15px;
+    padding-top: 7.5px;
+    padding-left: 7.5px;
+}
+
+#contenuFlecheDroite {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+#texteFlecheDroite {
+    font-family: "montserratregular", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#conteneurStatistiques {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.contenuStatistiques {
+    display: flex;
+    justify-content: center;
+    align-items: center;width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: "droid_serifregular", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contenuStatistiques:nth-child(1) {
+    background-color: #74AAD5;
+}
+
+.contenuStatistiques:nth-child(2) {
+    background-color: #FFFFFF;
+    color:  #13324B;
+    margin-left: 20px;
+}
+
+#conteneurFlecheBas {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.contenuFlecheBas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #74AAD5;
+    opacity: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+.contenuFlecheBas img {
+    transform: rotate(90deg);
+    width: 15px;
+    height: 15px;
+}
+
+/* Fin de CSS de la div 1 */
 
 /* Début du CSS de la div 2 */
 
@@ -337,6 +543,7 @@ body {
   font-family: 'montserratregular';
   margin-left: 30vh;
   margin-right: -30vh;
+  margin-top: 600px;
 }
 
 .div2-image {
@@ -351,6 +558,7 @@ body {
 .div2-titre {
   grid-area: 1 / 1 / 3 / 4;
   font-family: 'montserratregular';
+  background-color: #FFFFFF;
 }
 
 .div2-intro {
@@ -372,6 +580,7 @@ body {
   background-color: #FFFFFF;
   font-family: 'montserratextralight';
   font-size: 15px;
+  color: black;
 }
 
 .div2-texte p {
@@ -418,10 +627,13 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .div5-plusinfo {
   margin-right: 200px;
+  color: black;
+  font-size: 18px;
 }
 
 .div5-info {
@@ -454,6 +666,10 @@ body {
   width: 25px;
   height: 25px;
   padding-top: 7px;
+}
+
+.div5-contacteznous {
+  margin-bottom: -10px;
 }
 
 /* Fin du CSS de la div 5 */
@@ -534,281 +750,6 @@ ul li {
 
 .test_mediaqueries {
     display: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-@media screen and (max-width: 1920px) {
-
-}
-
-
-
-
-
-/* ==================================== */
-/* CSS par Christine, Florent et Lionel */
-=======
-/* CSS par Christine, Florent et Lionel */
-/* ==================================== */
-
-/*
-Blanc : #FFFFFF ou #FFF
-Bleu Clair : #74AAD5
-Bleu Foncé : #13324B
-*/
-
-/* Définition des polices personnalisées */
-
-@font-face {
-    font-family: "Droid Serif";
-    src: url('polices/droidserif-webfont.eot');
-    src: url('polices/droidserif-webfont.eot?#iefix') format('embedded-opentype'),
-         url('polices/droidserif-webfont.woff2') format('woff2'),
-         url('polices/droidserif-webfont.woff') format('woff'),
-         url('polices/droidserif-webfont.svg#droid_serifregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Montserrat";
-    src: url('polices/montserrat-regular-webfont.eot');
-    src: url('polices/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('polices/montserrat-regular-webfont.woff2') format('woff2'),
-         url('polices/montserrat-regular-webfont.woff') format('woff'),
-         url('polices/montserrat-regular-webfont.svg#montserratregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    background-color: #FFFFFF;
-    font-family: "Montserrat", sans-serif;
-    font-size : 15px;
-    color: white;
-    width: 100%;
-    margin: auto;
-}
-
-/* CSS de la DIV 1 */
-/* =============== */
-
-#div1 {
-    position: relative;
-    background-image: url("images/maison.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 95vh;
-    box-shadow: inset 0em 8em 3em rgba(0, 0, 0, 0.4);
-}
-
-#conteneurBarreSuperieure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-#conteneurBarreSuperieure ul {
-    list-style-type: none;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-    .contenuBarreSuperieure {
-        border-bottom: 0.1em solid #74AAD5;
-    }
-
-    .contenuBarreSuperieure img {
-        width: 100px;
-        height: 100px;
-    }
-
-#conteneurMenuSuperieur {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .contenuMenuSuperieur {
-        margin-right: 20px;
-    }
-
-    .contenuMenuSuperieur img {
-        width: auto;
-        height: auto;
-    }
-
-    .contenuMenuSuperieur:first-child img {
-        width: 100px;
-        height: 100px;
-        padding: 0px 200px 0px 0px;
-    }
-
-        .contenuMenuSuperieur:nth-child(1) {
-            margin-left: -40px;
-        }
-
-        .contenuMenuSuperieur:nth-child(2) {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-bottom: 0.3em solid #74AAD5;
-        }
-
-        .contenuMenuSuperieur:nth-child(8) {
-            background-color: #74AAD5;
-            width: 150px;
-            height: 30px;
-            border-radius: 2em;
-            padding-top: 15px;
-            padding-left: 10px;
-            margin-right: 0px;
-        }
-
-    .contenuMenuSuperieur:nth-child(8) img {
-            padding-left: 10px;
-        }
-
-#conteneurTitrePrincipal {
-    position: absolute;
-    bottom: 35%;
-    padding-left: 65.5%;
-
-
-}
-
-    .contenuTitrePrincipal {
-        align-items: center;
-        width: 250px;
-    }
-
-    .contenuTitrePrincipal:nth-child(1) p:first-child {
-        font-family: "Montserrat", sans-serif;
-        font-size: 80px;
-        font-weight: bold;
-        margin-bottom: 0px;
-    }
-
-    .contenuTitrePrincipal:nth-child(1) p:last-child {
-        font-family: "Droid Serif";
-        font-size: 20px;
-        font-style: italic;
-        margin-bottom: 0px;
-    }
-
-        .contenuTitrePrincipal:nth-child(2){
-            display: flex;
-            background-color: #13324B;
-            width: 206px;
-            height: 30px;
-            border-radius: 2em;
-            margin-top: 40px;
-            padding-top: 10px;
-            padding-left: 6px;
-            padding-bottom: 10px;
-        }
-
-        .contenuTitrePrincipal:nth-child(2) img {
-            width: 15px;
-            height: 15px;
-            padding-top: 7.5px;
-            padding-left: 7.5px;
-        }
-
-                #contenuFlecheDroite {
-                    background-color: #FFFFFF;
-                    border-radius: 50%;
-                    width: 30px;
-                    height: 30px;
-                    margin-left: 6px;
-                    margin-right: 10px;
-                }
-
-                #texteFlecheDroite {
-                    font-family: "Montserrat", sans-serif;
-                    font-size: 11px;
-                    font-weight: bold;
-                }
-
-#conteneurStatistiques {
-    position: absolute;
-    bottom: 5%;
-    display: flex;
-    align-items: center;
-    padding-left: 20%;
-}
-
-    .contenuStatistiques {
-        display: flex;
-        justify-content: center;
-        align-items: center;width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        text-align: center;
-        font-family: "Droid Serif", sans-serif;
-        font-size: 15px;
-        font-style: italic;
-        font-weight: bold;
-    }
-
-        .contenuStatistiques:nth-child(1) {
-            background-color: #74AAD5;
-
-        }
-
-        .contenuStatistiques:nth-child(2) {
-            background-color: #FFFFFF;
-            color:  #13324B;
-            margin-left: 20px;
-        }
-
-#conteneurFlecheBas {
-        position: absolute;
-        bottom: -25px;
-        left: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
-        opacity: 0.6;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-
-}
-
-    .contenuFlecheBas {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #74AAD5;
-        opacity: none;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-    }
-
-     .contenuFlecheBas img {
-        transform: rotate(90deg);
-        width: 15px;
-        height: 15px;
-    }
-
-
-
-
-
-
-
-/* ======================== Media Queries ======================== */
-/* PC : 2560 1920 1680 1440 1366 1280 1152 1024 800 / Mobile : 480 */
-
-.test_mediaqueries {
-    display: none;
-    background-color: black;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
