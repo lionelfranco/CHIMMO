@@ -338,6 +338,7 @@ body {
     background-image: url("images/maison.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 95vh;
     box-shadow: inset 0em 8em 3em rgba(0, 0, 0, 0.4);
 }
@@ -528,6 +529,10 @@ body {
     transform: rotate(90deg);
     width: 15px;
     height: 15px;
+}
+
+#conteneurBarreSuperieure1 {
+display: none;
 }
 
 /* Fin de CSS de la div 1 */
@@ -919,7 +924,179 @@ h1 {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1280px) {
+
+  #div1 {
+    width: 100%;
+    height: 500px;
+  }
+
+  #conteneurMenuSuperieur {
+    display: none;
+  }
+
+  #conteneurBarreSuperieure1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteneurBarreSuperieure1 ul {
+    list-style-type: none;
+    font-family: "montserratregular", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#conteneurMenuSuperieur1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenuMenuSuperieur1 {
+    margin-right: 20px;
+}
+
+.contenuMenuSuperieur1:lastchild {
+    margin-right: 0px;
+}
+
+.contenuMenuSuperieur1 img {
+    width: auto;
+    height: auto;
+}
+
+.contenuMenuSuperieur1:first-child img {
+    width: 200px;
+    height: 200px;
+    padding: 0px 580px 0px 0px;
+}
+
+.contenuMenuSuperieur1:last-child img {
+    width: 30px;
+    height: 30px;
+    padding-right: 40px;
+}
+
+.contenuMenuSuperieur1:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #74AAD5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+  #conteneurTitrePrincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0%;
+    padding-left: 10%;
+  }
+
+  .contenuTitrePrincipal:nth-child(2) {
+    margin-left: 180px;
+  }
+
+  #conteneurFlecheBas {
+    display: none;
+  }
+
+  #conteneurStatistiques {
+    display: flex;
+    flex-direction: column;
+    bottom: -245px;
+    left: -100px;
+  }
+
+  .contenuStatistiques {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      box-shadow: 0px 0px 50px 0.5px silver;
+  }
+
+  .contenuStatistiques:nth-child(2) {
+      margin-left: 0px;
+  }
+
+  #div2 {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .div2-titre {
+    position: relative;
+    bottom: -200px;
+    width: 600px;
+    z-index: 2;
+  }
+
+  .div2-texte {
+    position: relative;
+    bottom: -200px;
+    width: 600px;
+  }
+
+  .div2-image img {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .section3 {
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .section3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section4 {
+    width: 100%;
+  }
+
+  #div5 {
+    width: 100%;
+  }
+
+  #div6 {
+    width: 100%;
+    margin: auto;
+  }
+
+  .div6-logo {
+    position: relative;
+    left: -130px;
+  }
+
+  .div6-liste li {
+    display: none;
+  }
+
+  .div6-other {
+    position: relative;
+    right: -65px;
+  }
+
+  .div6-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .div6-website {
+    position: relative;
+    right: -75px;
+  }
 
 }
 
